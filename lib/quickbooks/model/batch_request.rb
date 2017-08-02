@@ -23,6 +23,7 @@ class Quickbooks::Model::BatchRequest < Quickbooks::Model::BaseModel
     xml_accessor :sales_receipt, from: "SalesReceipt", as: Quickbooks::Model::SalesReceipt
     xml_accessor :time_activity, from: "TimeActivity", as: Quickbooks::Model::TimeActivity
     xml_accessor :vendor, from: "Vendor", as: Quickbooks::Model::Vendor
+    xml_accessor :payment_method, from: "PaymentMethod", as: Quickbooks::Model::PaymentMethod
   end
 
   XML_COLLECTION_NODE = "IntuitBatchRequest"
